@@ -125,30 +125,6 @@ Anggota setiap *cluster*:
 - **Saham Moderat (Seimbang):** berada di tengah-tengah, dengan volatilitas 3,17% dan return harian 0,0976%.
 - Nama setiap *cluster* ditentukan manual oleh penulis berdasarkan rata-rata karakteristik, bukan dihasilkan oleh algoritma.
 
-## Insight & Rekomendasi Pengembangan
-
-Berdasarkan hasil *clustering*, terdapat beberapa catatan dan rekomendasi untuk pengembangan lebih lanjut:
-
-1. **Pengelompokan Mengikuti Profil Risiko dan Return, Bukan Sektor**
-
-   Saham dalam satu sektor tidak selalu berada pada *cluster* yang sama. Misalnya, saham pertambangan INCO dan MDKA berada pada *cluster* Agresif, sedangkan PTBA berada pada *cluster* Defensif. Hal ini menunjukkan bahwa K-Means mengelompokkan berdasarkan perilaku harga, bukan kategori industri.
-
-2. **Memanfaatkan Cluster untuk Diversifikasi**
-
-   Hasil *clustering* dapat menjadi bahan awal untuk menyusun portofolio yang menyebar pada beberapa profil risiko, dengan tetap memperhatikan analisis fundamental dan tujuan investasi.
-
-3. **Memperkaya Fitur dan Validasi Cluster**
-
-   Dapat dicoba fitur tambahan (misalnya *beta*, *maximum drawdown*, Sharpe Ratio, atau korelasi antarsaham), penggunaan Silhouette Score untuk memvalidasi jumlah *cluster*, serta perbandingan dengan algoritma lain seperti Hierarchical Clustering atau DBSCAN.
-
-4. **Menguji Stabilitas pada Periode Berbeda**
-
-   Karakter saham dapat berubah mengikuti kondisi pasar. Analisis dapat diulang pada periode lain (misalnya 3 atau 5 tahun) untuk melihat apakah keanggotaan *cluster* konsisten.
-
-5. **Memperhatikan Ukuran Cluster yang Tidak Seimbang**
-
-   Cluster Agresif hanya berisi 3 saham, sehingga profilnya sangat dipengaruhi oleh sedikit data. Hasilnya perlu ditafsirkan dengan hati-hati.
-
 ## Kesimpulan
 
 Proyek ini menunjukkan penerapan *Unsupervised Learning* untuk mengelompokkan 30 saham LQ45 berdasarkan volatilitas dan return rata-rata harian menggunakan K-Means dengan k = 3.
